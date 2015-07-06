@@ -1,20 +1,23 @@
 ﻿using System.Linq;
 using System.Collections.Generic;
+using System;
 
 namespace TreeBinary
 {
     public class TreeBinaryService
     {
-        public IEnumerable<int> DoTree(Tree<Ramification> tree)
+        public IEnumerable<int> DoTree(IEnumerable<Tree<Ramification>> tree, int number)
         {
+            Tree<Ramification> ramification = tree.FirstOrDefault(x => x.Data.Number == number);
+
             ICollection<int> result = new List<int>();
 
-            if (tree == null || tree.Data == null)
+            if (ramification == null || ramification.Data == null)
                 return result;
 
-            result.Add(tree.Data.Number);
+            result.Add(ramification.Data.Number);
 
-            DoTree(tree, ref result);
+            DoTree(ramification, ref result);
 
             return result.Reverse();
         }

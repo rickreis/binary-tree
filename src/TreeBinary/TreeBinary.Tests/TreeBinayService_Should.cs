@@ -8,24 +8,22 @@ namespace TreeBinary.Tests
     [TestClass]
     public class TreeBinayService_Should
     {
-        static IEnumerable<Tree<Ramification>> _treeRoot;
+        static IEnumerable<Tree<Ramification>> _tree;
 
         [TestInitialize]
         public void Initialize()
         {
-            _treeRoot = BuilderTree.Buider();
+            _tree = BuilderTree.Buider();
         }
 
         [TestMethod]
         public void Enter_number_9_result_1_4_2_12_13_9()
         {
             //arrange
-            TreeBinaryService service = new TreeBinaryService();
-
-            Tree<Ramification> tree = _treeRoot.FirstOrDefault(x => x.Data.Number == 9);
+            TreeBinaryService service = new TreeBinaryService();            
 
             //act
-            IEnumerable<int> result = service.DoTree(tree);
+            IEnumerable<int> result = service.DoTree(_tree, 9);
 
             //assert
             Assert.AreEqual("[1,4,2,12,13,9]", String.Format("[{0}]", String.Join(",", result.Select(x => x))));            
@@ -35,12 +33,10 @@ namespace TreeBinary.Tests
         public void Enter_number_1_result_1()
         {
             //arrange
-            TreeBinaryService service = new TreeBinaryService();
-
-            Tree<Ramification> tree = _treeRoot.FirstOrDefault(x => x.Data.Number == 1);
+            TreeBinaryService service = new TreeBinaryService();            
 
             //act
-            IEnumerable<int> result = service.DoTree(tree);
+            IEnumerable<int> result = service.DoTree(_tree, 1);
 
             //assert
             Assert.AreEqual("[1]", String.Format("[{0}]", String.Join(",", result.Select(x => x))));
@@ -50,12 +46,10 @@ namespace TreeBinary.Tests
         public void Enter_number_17_result_nothing()
         {
             //arrange
-            TreeBinaryService service = new TreeBinaryService();
-
-            Tree<Ramification> tree = _treeRoot.FirstOrDefault(x => x.Data.Number == 17);
+            TreeBinaryService service = new TreeBinaryService();            
 
             //act
-            IEnumerable<int> result = service.DoTree(tree);
+            IEnumerable<int> result = service.DoTree(_tree, 17);
 
             //assert
             Assert.AreEqual("[]", String.Format("[{0}]", String.Join(",", result.Select(x => x))));
@@ -65,12 +59,10 @@ namespace TreeBinary.Tests
         public void Enter_number_4_result_1_4()
         {
             //arrange
-            TreeBinaryService service = new TreeBinaryService();
-
-            Tree<Ramification> tree = _treeRoot.FirstOrDefault(x => x.Data.Number == 4);
+            TreeBinaryService service = new TreeBinaryService();            
 
             //act
-            IEnumerable<int> result = service.DoTree(tree);
+            IEnumerable<int> result = service.DoTree(_tree, 4);
 
             //assert
             Assert.AreEqual("[1,4]", String.Format("[{0}]", String.Join(",", result.Select(x => x))));
