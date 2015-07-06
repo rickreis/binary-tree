@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeBinary.ConsoleApp", "TreeBinary\TreeBinary.ConsoleApp.csproj", "{300B2C69-18A1-44CF-8101-44AEA07F7349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeBinary.Tests", "TreeBinary.Tests\TreeBinary.Tests.csproj", "{AF8F2A8A-FBBF-4DB7-B26B-77F99D977739}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeBinary.Core", "TreeBinary.Core\TreeBinary.Core.csproj", "{CDEF5567-DB59-4B15-97C0-AB9DC2D7ACDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{300B2C69-18A1-44CF-8101-44AEA07F7349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{300B2C69-18A1-44CF-8101-44AEA07F7349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{300B2C69-18A1-44CF-8101-44AEA07F7349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{300B2C69-18A1-44CF-8101-44AEA07F7349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8F2A8A-FBBF-4DB7-B26B-77F99D977739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8F2A8A-FBBF-4DB7-B26B-77F99D977739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8F2A8A-FBBF-4DB7-B26B-77F99D977739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8F2A8A-FBBF-4DB7-B26B-77F99D977739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDEF5567-DB59-4B15-97C0-AB9DC2D7ACDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDEF5567-DB59-4B15-97C0-AB9DC2D7ACDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDEF5567-DB59-4B15-97C0-AB9DC2D7ACDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDEF5567-DB59-4B15-97C0-AB9DC2D7ACDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
