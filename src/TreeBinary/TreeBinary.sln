@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeBinary.ConsoleApp", "TreeBinary\TreeBinary.ConsoleApp.csproj", "{300B2C69-18A1-44CF-8101-44AEA07F7349}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeBinary.ConsoleApp", "TreeBinary.ConsoleApp\TreeBinary.ConsoleApp.csproj", "{300B2C69-18A1-44CF-8101-44AEA07F7349}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeBinary.Tests", "TreeBinary.Tests\TreeBinary.Tests.csproj", "{AF8F2A8A-FBBF-4DB7-B26B-77F99D977739}"
 EndProject
