@@ -67,5 +67,31 @@ namespace TreeBinary.Tests
             //assert
             Assert.AreEqual("[1,4]", String.Format("[{0}]", String.Join(",", result.Select(x => x))));
         }
+
+        [TestMethod]
+        public void Result_empty_when_tree_invalid()
+        {
+            //arrange
+            TreeBinaryService service = new TreeBinaryService();            
+
+            //act
+            IEnumerable<int> result = service.DoTree(null, 0);
+
+            //assert
+            Assert.IsFalse(result.Any());
+        }
+
+        [TestMethod]
+        public void Result_empty_when_tree_not_any_info()
+        {
+            //arrange
+            TreeBinaryService service = new TreeBinaryService();
+
+            //act
+            IEnumerable<int> result = service.DoTree(new List<Tree<Ramification>>(), 0);
+
+            //assert
+            Assert.IsFalse(result.Any());
+        }
     }
 }

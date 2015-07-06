@@ -8,9 +8,12 @@ namespace TreeBinary
     {
         public IEnumerable<int> DoTree(IEnumerable<Tree<Ramification>> tree, int number)
         {
-            Tree<Ramification> ramification = tree.FirstOrDefault(x => x.Data.Number == number);
-
             ICollection<int> result = new List<int>();
+
+            if (tree == null || tree.Any() == false)
+                return result;
+
+            Tree<Ramification> ramification = tree.FirstOrDefault(x => x.Data.Number == number);
 
             if (ramification == null || ramification.Data == null)
                 return result;
