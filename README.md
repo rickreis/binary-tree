@@ -1,2 +1,2 @@
 # binary-tree
-![ScreenShot](https://github.com/rickreis/binary-tree/src/image-sample.jpg)
+![ScreenShot](https://github.com/rickreis/binary-tree/blob/master/src/image-sample.jpg)
